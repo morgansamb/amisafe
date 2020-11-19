@@ -1,17 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.AmISafe" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.AmISafe" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorAccent">@color/primaryLightColor</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorOnSecondary">@color/onSecondary</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
         <!-- Customize your theme here. -->
+        <item name="fontFamily">@font/oswald</item>
+        <item name="colorControlHighlight">#42DDDDDD</item>
+
+        <!-- Full screen -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">@color/grey_normal</item>
+
     </style>
 
     <style name="H1Heading">
@@ -34,7 +48,7 @@
         <item name="textAllCaps">false</item>
         <item name="fontFamily">@font/oswald_bold</item>
         <item name="android:elevation">1dp</item>
-        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/colorPrimary</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/primaryColor</item>
         <item name="android:minHeight">55dp</item>
         <item name="android:minWidth">150dp</item>
         <item name="android:layout_width">wrap_content</item>
@@ -55,6 +69,16 @@
         <item name="android:layout_marginBottom">8dp</item>
         <item name="android:layout_marginStart">25dp</item>
         <item name="android:layout_marginEnd">25dp</item>
+    </style>
+
+    <style name="TextAppearanceBottomNavBarActive">
+        <item name="android:fontFamily">@font/oswald_semi_bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearanceBottomNavBarInactive">
+        <item name="android:fontFamily">@font/oswald_semi_bold</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 </resources>

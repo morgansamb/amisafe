@@ -7,7 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.amisafe.HomeFragment"
+        android:name="com.example.amisafe.ui.home.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/myAccountsFragment"
+        android:name="com.example.amisafe.ui.myaccounts.MyAccountsFragment"
+        android:label="fragment_my_accounts"
+        tools:layout="@layout/fragment_my_accounts" />
 </navigation>
